@@ -6,12 +6,12 @@
 
 A small, realistic app that exercises almost the entire `@angular/forms/signals` API in a single form — from validators, through schemas and dynamic fields, to custom controls without `ControlValueAccessor`.
 
-[![CI & Deploy](https://github.com/<user>/signal-forms-delegat/actions/workflows/deploy.yml/badge.svg)](https://github.com/<user>/signal-forms-delegat/actions/workflows/deploy.yml)
+[![CI & Deploy](https://github.com/hubertkubiak/delegat/actions/workflows/deploy.yml/badge.svg)](https://github.com/hubertkubiak/delegat/actions/workflows/deploy.yml)
 ![Angular](https://img.shields.io/badge/Angular-22-0F766E?logo=angular&logoColor=white)
 ![Signal Forms](https://img.shields.io/badge/Signal%20Forms-stable-0F766E)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-[**▶ Live demo**](https://<user>.github.io/signal-forms-delegat/)
+[**▶ hubertkubiak.github.io/delegat/**](https://hubertkubiak.github.io/delegat/)
 
 <img src="docs/screenshot.png" alt="Screenshot of the Delegat app" width="860">
 
