@@ -92,7 +92,7 @@ src/styles/     tokens, base and form styles (light theme)
 
 ## Deploy
 
-On every push to `main`, the `.github/workflows/deploy.yml` workflow runs lint, tests and the build, then publishes the app to GitHub Pages. Pull requests only run lint, tests and the build.
+On every push to `main`, the `.github/workflows/deploy.yml` workflow runs lint, a format check, tests and the build, then publishes the app to GitHub Pages. Pull requests only run the checks and the build.
 
 One-time setup: **Settings → Pages → Source: GitHub Actions**.
 

@@ -18,7 +18,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  APP_NAME: signal-forms-delegat   # musi odpowiadać nazwie projektu w angular.json
+  APP_NAME: signal-forms-delegat   # must match the project name in angular.json
 
 jobs:
   build:
@@ -38,7 +38,10 @@ jobs:
         run: npm ci
 
       - name: Lint
-        run: npm run lint --if-present
+        run: npm run lint
+
+      - name: Check formatting
+        run: npm run format:check
 
       - name: Unit tests
         run: npm run test:ci
