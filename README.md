@@ -98,7 +98,7 @@ One-time setup: **Settings → Pages → Source: GitHub Actions**.
 
 ## API notes
 
-Signatures were verified against `node_modules/@angular/forms/types/signals.d.ts` (Angular 22.2). Differences from the article and a few subtleties:
+Signatures were verified against `node_modules/@angular/forms/types/signals.d.ts` (Angular 22.2). Differences from the [angular.love article](https://angular.love/signal-forms-in-angular-21-complete-guide) and a few subtleties:
 
 - **`disabled` / `hidden` / `readonly` take `{ when }`.** Passing a function directly (`disabled(path, () => …)`) is marked `@deprecated`. `disabled({ when })` may return a `string`, which ends up in `disabledReasons()`.
 - **`metadata(path, key, logicFn)`** — the third argument is always a `LogicFn`, not a value. `createMetadataKey(MetadataReducer.list<string>())` collects multiple calls into an array — that is how `API_BADGE` works. Reading: `field().metadata(KEY)?.()` returns a `Signal`.
